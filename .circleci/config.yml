@@ -43,7 +43,7 @@ jobs:
             - rossapp
       - run:
           name: "Build my app"
-          command: npm run audit
+          command: npm audit
 
 workflows:
   my-pipeline:
