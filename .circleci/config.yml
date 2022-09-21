@@ -10,6 +10,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
+      - npm i
       - run:
           name: "Build my app"
           command: npm run lint
@@ -23,6 +24,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
+      - npm i
       - restore_cache:
           keys:
             - rossapp
@@ -35,6 +37,7 @@ jobs:
       - image: circleci/node:13.8.0
     steps:
       - checkout
+      - npm i
       - restore_cache:
           keys:
             - rossapp
